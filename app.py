@@ -543,8 +543,8 @@ def get_db_connection():
         user=db_config["user"],
         password=db_config["password"],
         database=db_config["database"],
-        ssl_verify_cert=True,
-        ssl_disabled=False
+        ssl_verify_cert=False,
+        # ssl_disabled=False
     )
 
 def init_db():
